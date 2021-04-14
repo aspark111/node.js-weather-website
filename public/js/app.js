@@ -1,7 +1,5 @@
 
 //Browser http requests with fetch: grabs info fro preloaded json page
-console.log('Clientside javascript file is loaded')
-
 //Now that we've made a search bar and search button for our home page
 //in index.hbs, it's time to get the data.
 const weatherForm = document.querySelector("form")      //returns a javascript representation of the element
