@@ -8,6 +8,7 @@ const forecast = require('./utils/forecast')
 
 //express is a fuction as opposed to an object
 const app = express()
+const port = process.env.PORT || 3000
 
 console.log(__dirname)
 console.log(path.join(__dirname, '../public'))
@@ -140,8 +141,7 @@ app.get('', (req, res) => {     //req (requset) contains information about incom
 //app.com/help
 //app.com/about
 
-app.listen(3000, ()=> {
+app.listen(port, ()=> {
     console.log('Server is up on port 3000')
 })          //starts up server at given port. leaving parameter empty designates default port
-
 
